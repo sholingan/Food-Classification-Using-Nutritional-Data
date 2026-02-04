@@ -53,7 +53,7 @@ Installation
 
 Clone the repository:
 
-git clone https://github.com/yourusername/Food-Classification-Using-Nutritional-Data.git
+git clone https://github.com/sholingan/Food-Classification-Using-Nutritional-Data.git
 cd Food-Classification-Using-Nutritional-Data
 
 
