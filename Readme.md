@@ -142,7 +142,7 @@ Insights & Top 10 Restaurants
 
 Author
 
-Your Name
-Email: your.email@example.com
+Sholingan S
+Email: sholingan@gmail.com
 
-LinkedIn: linkedin.com/in/yourprofile
+LinkedIn: linkedin.com/in/sholingans
