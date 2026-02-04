@@ -1,61 +1,60 @@
-🍽️ Smart Swiggy Recommender System
+🍏 Food Classification Using Nutritional Data
 Overview
 
-The Swiggy Restaurant Recommender is an advanced AI-powered web app built with Streamlit that helps users discover restaurants tailored to their preferences. This project integrates hybrid recommendation algorithms, personalized suggestions, ML predictions, Google Maps integration, and an interactive favorites system to mimic a real-world food delivery platform.
+This project focuses on classifying food items based on their nutritional content using machine learning. The model can predict the category of a food item (e.g., Fast Food, Dessert, Healthy, etc.) given its nutritional information such as calories, protein, fat, carbohydrates, sugar, etc.
 
-This app is ideal for portfolio projects, demonstrating full-stack AI application design, data analysis, and interactive UI development.
+It is a great demonstration of data preprocessing, feature engineering, and classification algorithms applied to real-world nutritional datasets.
 
 Features
-✅ Step 1 — Basic + Filters + Banner
 
-Fully responsive Streamlit interface
+Food Classification: Predicts food category using nutritional values.
 
-Banner image and header
+Data Preprocessing: Handles missing values, normalization, and encoding.
 
-Filter restaurants by:
+Exploratory Data Analysis (EDA): Insights into nutritional distributions and food types.
 
-City
+Machine Learning Models: Supports multiple classifiers such as:
 
-Cuisine
+Random Forest
 
-Rating
+XGBoost
 
-Cost
+Logistic Regression
 
-Top restaurants displayed with:
+K-Nearest Neighbors (KNN)
 
-Name, city, cuisine
+Evaluation Metrics: Accuracy, precision, recall, F1-score, and confusion matrix.
 
-Rating and cost
+Visualization: Nutritional distribution and category analysis using Seaborn and Matplotlib.
 
-✅ Step 2 — Similarity + Favorites + Personalized
+Dataset
 
-Find similar restaurants using cosine similarity on encoded features
+Dataset contains nutritional information of food items:
 
-Favorites system to save and view favorite restaurants
+Calories
 
-Personalized recommendations based on user activity history
+Protein
 
-Feedback system (like/dislike) to improve suggestions
+Fat
 
-✅ Step 3 — ML + Google Maps + Images + Insights
+Carbohydrates
 
-ML-based recommendations using Random Forest / XGBoost on restaurant features (optional)
+Sugar
 
-Google Maps integration to view restaurant location and directions
+Fiber
 
-Restaurant cards include food images
+Food Category (Target)
 
-Dataset insights using Seaborn visualizations
+Source: Public datasets from Kaggle / UCI / self-curated nutritional dataset.
 
-Top 10 restaurants summary with rating, city, cuisine, and cost
+CSV file: food_nutrition.csv
 
 Installation
 
 Clone the repository:
 
-git clone https://github.com/yourusername/swiggy-recommender.git
-cd swiggy-recommender
+git clone https://github.com/yourusername/Food-Classification-Using-Nutritional-Data.git
+cd Food-Classification-Using-Nutritional-Data
 
 
 Create and activate a Python virtual environment:
@@ -67,78 +66,61 @@ venv\Scripts\activate
 source venv/bin/activate
 
 
-Install dependencies:
+Install required packages:
 
 pip install -r requirements.txt
 
 How to Run
-streamlit run app.py
+Jupyter Notebook
+jupyter notebook
 
 
-Navigate through the sidebar to access:
+Open Food_Classification.ipynb and run the notebook to explore data, train models, and evaluate performance.
 
-Browse Restaurants
+Python Script
+python train_model.py
 
-Find Similar Restaurants
 
-Favorites
+Trains the selected model and outputs classification metrics.
 
-AI Recommendations
-
-Insights
+Saves trained models in models/ folder for future prediction.
 
 File Structure
-swiggy-recommender/
+Food-Classification-Using-Nutritional-Data/
 │
-├─ app.py                  # Main Streamlit application
-├─ swiggy_cleaned_data.csv # Cleaned restaurant dataset
-├─ swiggy_encoded_data.csv # Encoded features for similarity
-├─ models/                 # ML models and preprocessing pickle files
-├─ images/                 # Sample restaurant images
-├─ requirements.txt        # Python dependencies
-└─ README.md               # Project documentation
+├─ data/
+│   └─ food_nutrition.csv      # Nutritional dataset
+├─ models/
+│   └─ trained_model.pkl       # Saved trained ML model
+├─ notebooks/
+│   └─ Food_Classification.ipynb
+├─ train_model.py              # Script to train ML model
+├─ requirements.txt            # Python dependencies
+└─ README.md                   # Project documentation
 
 Technologies Used
 
 Python 3.10+
 
-Streamlit — Web app framework
+Pandas / NumPy — Data manipulation
 
-Pandas / Numpy — Data manipulation
+Scikit-learn — ML models and evaluation
 
-Scikit-learn — Similarity computations, ML models
+XGBoost — Boosted tree model for classification
 
-Plotly & Seaborn — Data visualization
+Seaborn / Matplotlib — Data visualization
 
-Google Maps API — Restaurant location links
+Joblib / Pickle — Model serialization
 
 Future Enhancements
 
-User login system and profiles
+Deploy a web app with Streamlit for live food classification.
 
-Recommendation history for multiple sessions
+Add deep learning models (e.g., feed-forward neural networks) for higher accuracy.
 
-Sentiment analysis on restaurant reviews
+Integrate image-based food classification using computer vision.
 
-Dockerization and cloud deployment
-
-Enhanced ML-based ranking using more features
-
-Screenshots
-
-Home / Banner
-
-Filter Search
-
-Similar Restaurants
-
-Favorites
-
-Personalized Recommendations
-
-Insights & Top 10 Restaurants
-
-(You can add actual screenshots here)
+Add interactive nutritional recommendations based on user preferences.
 
 Author
 
@@ -146,3 +128,6 @@ Sholingan S
 Email: sholingan@gmail.com
 
 LinkedIn: linkedin.com/in/sholingans
+License
+
+This project is MIT Licensed — free for personal, educational, and portfolio use.
