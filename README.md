@@ -128,6 +128,8 @@ Sholingan S
 Email: sholingan@gmail.com
 
 LinkedIn: linkedin.com/in/sholingans
+
+
 License
 
 This project is MIT Licensed — free for personal, educational, and portfolio use.
