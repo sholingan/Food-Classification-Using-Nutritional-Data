@@ -125,6 +125,7 @@ Add interactive nutritional recommendations based on user preferences.
 Author
 
 Sholingan S
+
 Email: sholingan@gmail.com
 
 LinkedIn: linkedin.com/in/sholingans
